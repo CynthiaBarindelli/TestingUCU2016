@@ -73,7 +73,7 @@ public class Desafio4Test{
        assertEquals(producto.trim(), wd.findElement(By.xpath("//*/div[4]/div/div/div[2]/h4/a")).getText());
        
        // Visual validation point #3
-       eyes.checkWindow("");
+       eyes.checkWindow("Nombre del producto");
        
        //Click en el elemento
        wd.findElement(By.xpath("//*/div[4]/div/div/div[2]/h4/a")).click();
@@ -100,7 +100,7 @@ public class Desafio4Test{
         }
     }
 
-    //Lee los productos desde un archivo pasado por par·metro.	
+    //Lee los productos desde un archivo pasado por par√°metro.	
 	public static Collection<String[]> leerProductos(String fileName)throws IOException {
 	
 		List<String[]> datos = new ArrayList<String[]>();
